@@ -1,0 +1,22 @@
+name: Lunch Alarm
+
+on:
+  schedule:
+    - cron: "45 04 * * *"
+
+jobs:
+  alarm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - name: Install dependencies
+        uses: perl-actions/install-with-cpanm@v1.1
+        with:
+          install: |
+            JSON
+            LWP::Simple
+            LWP::UserAgent
+      - name: Run script
+        run: perl scripts/lunch-alarm.pl
+        env:
+          MM_INCOME: ${{ secrets.MM_INCOME }}
