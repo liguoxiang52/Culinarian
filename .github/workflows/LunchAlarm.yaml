@@ -2,7 +2,7 @@ name: Lunch Alarm
 
 on:
   schedule:
-    - cron: "45 04 * * *"
+    - cron: "42 04 * * *"
 
 jobs:
   alarm:

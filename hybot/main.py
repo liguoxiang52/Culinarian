@@ -72,7 +72,7 @@ ERROR:
 ```
 {data["error"]}
 ```
-    """
+"""
     stdout = ""
     if data["stdout"]:
         stdout = f"""
