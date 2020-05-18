@@ -34,6 +34,7 @@ class Runner:
 
     def eval(self, code):
         self._code = code
+        code = f"(do (require [hy.extra.anaphoric [*]]) {code})"
         expr = hy.read_str(code)
         self._value = hy.eval(expr)
 
