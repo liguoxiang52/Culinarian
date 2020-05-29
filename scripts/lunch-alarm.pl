@@ -13,7 +13,7 @@ use LWP::UserAgent;
 
 my $today = `date +%Y%m%d`;
 my $is_holiday = get("http://tool.bitefu.net/jiari/?d=${today}");
-die "Today is holiday." if $is_holiday;
+say "Today is holiday." and exit 0 if $is_holiday;
 
 sub _restaurant {
     chomp $_[0];
