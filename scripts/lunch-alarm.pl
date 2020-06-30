@@ -61,3 +61,4 @@ __DATA__
 饺子公馆@https://www.meituan.com/meishi/180564025/
 赵家腊汁肉@https://www.meituan.com/meishi/179756401/
 炒炒任小米@https://www.meituan.com/meishi/195938245/
+杨国福麻辣烫@http://www.dianping.com/shop/l85V7J37MUyiLrss
